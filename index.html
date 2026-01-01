@@ -6,6 +6,7 @@
     <title>Akilesh Kumar S | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
 </head>
 <body class="dark-theme">
 
@@ -13,24 +14,32 @@
 
     <nav>
         <div class="logo">A<span>K</span>S</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-list">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#certifications" class="nav-link">Certificates</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-        <a href="Resume AKI.pdf" download class="resume-btn">
-            <i class="fas fa-file-pdf"></i> Resume
-        </a>
     </nav>
 
     <header id="home" class="hero">
-        <div class="hero-content slide-up">
-            <span class="status-pill">UI/UX & Frontend Developer</span>
-            <h1>Akilesh Kumar S</h1>
-            <p class="hero-subtitle gradient-text">Designing the Future of Web</p>
+        <div class="hero-container slide-up">
+            <div class="hero-content">
+                <span class="status-pill category">UI/UX & Frontend Developer</span>
+                <h1>Akilesh Kumar S</h1>
+                <p class="hero-subtitle gradient-text">Designing the Future of Web</p>
+                <div class="hero-cta">
+                    <a href="Resume AKI.pdf" download class="resume-btn">
+                        <i class="fas fa-file-pdf"></i> Download Resume
+                    </a>
+                </div>
+            </div>
             <div class="hero-image">
                 <img src="PASSPORT SIZE PHOTO.jpeg" alt="Akilesh Kumar S">
             </div>
@@ -39,15 +48,15 @@
 
     <section id="about" class="section alt-bg">
         <h2 class="section-title">Summary</h2>
-        <div class="summary-container slide-up">
-            <p>Passionate Web Developer and UI/UX Designer with hands-on experience in building responsive websites using HTML, CSS, and JavaScript, and designing intuitive user interfaces using Figma and Canva. Experienced in research-based projects, front-end development, and creative design. Eager to learn, collaborate, and contribute to impactful projects.</p>
+        <div class="summary-container slide-up hover-lift">
+            <p>Passionate Web Developer and UI/UX Designer with hands-on experience in building responsive websites using HTML, CSS, and JavaScript, and designing intuitive user interfaces using Figma and Canva. Experienced in research-based projects, front-end development, and creative design.</p>
         </div>
     </section>
 
     <section id="experience" class="section">
-        <h2 class="section-title">Professional Experience</h2>
+        <h2 class="section-title">Experience</h2>
         <div class="experience-grid slide-up">
-            <div class="experience-card">
+            <div class="experience-card hover-lift">
                 <div class="exp-meta">
                     <span class="category">Internship</span>
                     <span class="date">Dec 2024 – Mar 2025</span>
@@ -55,9 +64,11 @@
                 <h3>Research & Project Development Intern</h3>
                 <h4 class="company">Maya Labs</h4>
                 <ul class="exp-points">
-                    <li>Worked on project development and implementation, focusing on research and data analysis.</li>
-                    <li>Designed professional brochures for technical and promotional purposes.</li>
-                    <li>Contributed to front-end development using HTML, CSS, and JavaScript for lab projects.</li>
+                    <li>Project Development: Built and implemented core project features using HTML, CSS, and JavaScript.</li>
+                    <li>In-depth Research: Conducted thorough technical research to support project innovation and strategy.</li>
+                    <li>Innovative Solutions: Contributed to brainstorming and creating unique solutions for technical challenges.</li>
+                    <li>Data Analysis: Analyzed complex datasets to drive informed design and development decisions.</li>
+                    <li>Technical Design: Developed research-based layouts and brochures to communicate project findings.</li>
                 </ul>
             </div>
         </div>
@@ -66,20 +77,31 @@
     <section id="projects" class="section alt-bg">
         <h2 class="section-title">Projects</h2>
         <div class="bento-grid slide-up">
-            <div class="bento-item">
+            <div class="bento-item hover-lift">
                 <span class="category">IoT / Dashboard</span>
                 <h3>Automatic Fish Feeder</h3>
-                <p>An automated feeding system with a custom-built front-end interface for monitoring and control.</p>
+                <ul class="project-list">
+                    <li>Built responsive feeding trackers with HTML/CSS.</li>
+                    <li>Added JS manual triggers and instant controls.</li>
+                    <li>Created real-time food level and status alerts.</li>
+                </ul>
             </div>
-            <div class="bento-item">
+            <div class="bento-item hover-lift">
                 <span class="category">Frontend Design</span>
                 <h3>Maya Labs Layouts</h3>
-                <p>Creation of highly responsive, research-focused web layouts using modern HTML and CSS.</p>
+                <ul class="project-list">
+                    <li>Fluid Design: Created adaptive layouts that work on any screen size.</li>
+                    <li>Data Clarity: Structured complex research info into clean, readable sections.</li>
+                    <li>UI Polish: Focused on clean spacing and professional typography.</li>
+                </ul>
             </div>
-            <div class="bento-item">
+            <div class="bento-item hover-lift">
                 <span class="category">Visual Branding</span>
-                <h3>Poster & Brochure Design</h3>
-                <p>Designed impactful visual materials for college events and technical capabilities brochures.</p>
+                <h3>Poster Design</h3>
+                <ul class="project-list">
+                    <li>Design Tools: Leveraged Figma and Canva to create professional-grade marketing materials.</li>
+                    <li>Visual Strategy: Focused on clean typography and layout hierarchy to increase event engagement.</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -87,19 +109,20 @@
     <section id="education" class="section">
         <h2 class="section-title">Education</h2>
         <div class="education-grid slide-up">
-            <div class="edu-card highlighted">
-                <span class="category">Undergraduate</span>
+            <div class="edu-card hover-lift highlighted">
+                <span class="category">Undergraduate (UG)</span>
                 <h3>BE Computer Science & Engineering</h3>
-                <p>Sasurie College of Engineering, Tiruppur</p>
-                <div class="grade">7.76 CGPA</div>
+                <p>Sasurie College of Engineering, Tiruppur</p><br>
+                <div class="grade" style="color: aqua;"><h2>7.76 CGPA</h2></div>
             </div>
-            <div class="edu-card">
-                <span class="category">Higher Secondary (2022)</span>
-                <h3>HSLC - 72.3%</h3>
-                <p>James Memorial Metric Hr. Sec. School</p><br>
-                <span class="category">Secondary (2020)</span>
-                <h3>SSLC - 82.6%</h3>
+            <div class="edu-card hover-lift">
+                <span class="category">Higher Secondary (HS)</span>
                 <p>James Memorial Metric Hr. Sec. School</p>
+                <h3>HSLC - 72.3%</h3>
+                <br>
+                <span class="category">Secondary (S)</span>
+                <p>James Memorial Metric Hr. Sec. School</p>
+                <h3>SSLC - 82.6%</h3>
             </div>
         </div>
     </section>
@@ -107,104 +130,61 @@
     <section id="certifications" class="section alt-bg">
         <h2 class="section-title">Certifications</h2>
         <div class="cert-grid slide-up">
-            <div class="cert-item"><i class="fas fa-certificate"></i> Claude AI – Skill Nation</div>
-            <div class="cert-item"><i class="fas fa-certificate"></i> Figma UI/UX Essentials – Udemy</div>
-            <div class="cert-item"><i class="fas fa-certificate"></i> UI/UX Design Masterclass – Udemy</div>
-            <div class="cert-item"><i class="fas fa-certificate"></i> Master UX/UI: Adobe XD – Udemy</div>
-            <div class="cert-item"><i class="fas fa-certificate"></i> DevOps CI/CD – Infosys Springboard</div>
-            <div class="cert-item"><i class="fas fa-certificate"></i> Faceless Content Creation AI – Udemy</div>
+            <div class="cert-item hover-lift"><i class="fas fa-certificate"></i> Figma UI/UX Essentials – Udemy</div>
+            <div class="cert-item hover-lift"><i class="fas fa-certificate"></i> UI/UX Design Masterclass – Udemy</div>
+            <div class="cert-item hover-lift"><i class="fas fa-certificate"></i> Master UX/UI: Adobe XD – Udemy</div>
+            <div class="cert-item hover-lift"><i class="fas fa-certificate"></i> DevOps CI/CD – Infosys Springboard</div>
+            <div class="cert-item hover-lift"><i class="fas fa-certificate"></i> Claude AI – Skill Nation</div>
+            <div class="cert-item hover-lift"><i class="fas fa-certificate"></i> Faceless Content Creation AI – Udemy</div>
         </div>
     </section>
 
     <section id="skills" class="section">
-        <h2 class="section-title">Skills & Languages</h2>
+        <h2 class="section-title">Skills</h2>
         <div class="skills-layout slide-up">
             <div class="skill-group">
-                <h4>Programming</h4>
+                <h4 class="category">Programming</h4>
                 <div class="pills">
                     <span>HTML/CSS</span>
                     <span>JavaScript</span>
                     <span>Python</span>
                     <span>Java</span>
-                    <span>Flutter</span>
                 </div>
             </div>
             <div class="skill-group">
-                <h4>Design Tools</h4>
+                <h4 class="category">Design Tools</h4>
                 <div class="pills">
                     <span class="design">Figma</span>
                     <span class="design">Canva</span>
-                    <span class="design">Adobe XD</span>
                     <span class="design">Framer</span>
-                    <span class="design">PhotoShop</span><br>
-                     <span class="design">Adobe Illustrator</span>
+                    <span class="design">Adobe XD</span>
+                    <span class="design">Adobe PhotoShop</span>
+                    <span class="design">Adobe Illustartor</span>
                 </div> 
             </div>
         </div>
         <div class="lang-strip slide-up">
-    <p class="lang-title">Spoken Languages</p>
-    <div class="lang-container">
-        <span class="lang-tag">Tamil <small>(Native)</small></span>
-        <span class="lang-tag">English <small>(Professional)</small></span>
-        <span class="lang-tag">Hindi <small>(Basic)</small></span>
-    </div>
-</div>
-    </section>
-    <footer id="contact" class="section">
-    <div class="contact-glass slide-up">
-        <h2>Get In Touch</h2>
-        <div class="contact-methods">
-            <a href="#" onclick="openGmail(event)" class="contact-btn">
-                <i class="fas fa-envelope"></i> Email
-            </a>
-            
-            <a href="https://www.linkedin.com/in/akilesh-kumar-20961334b/" target="_blank" class="contact-btn">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="https://github.com/Lucifer-Aki" target="_blank" class="contact-btn github-btn">
-                <i class="fab fa-github"></i> GitHub
-            </a>
-            
-            <a href="tel:+918925200917" class="contact-btn">
-                <i class="fas fa-phone"></i> +91 89252 00917
-            </a>
+            <p class="lang-title category">Spoken Languages</p>
+            <div class="lang-container">
+                <span class="lang-tag">Tamil <small>(Native)</small></span>
+                <span class="lang-tag">English <small>(Professional)</small></span>
+                <span class="lang-tag">Hindi <small>(Basic)</small></span>
+            </div>
         </div>
-        <p class="location">Nazareth, Thoothukudi, India</p>
-    </div>
-</footer>
+    </section>
 
-    <script>
-function openGmail(e) {
-    e.preventDefault();
-    const email = "akileshk150@gmail.com";
-    const subject = "Portfolio Inquiry";
-    
-    // Check if the user is on a mobile device
-    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    <footer id="contact" class="section">
+        <div class="contact-glass slide-up">
+            <h2>Get In Touch</h2>
+            <div class="contact-methods">
+                <a href="#" onclick="openGmail(event)" class="contact-btn"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://linkedin.com/in/akilesh-kumar-20961334b/" target="_blank" class="contact-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/Lucifer-Aki" target="_blank" class="contact-btn"><i class="fab fa-github"></i> GitHub</a>
+                <a href="tel:+918925200917" class="contact-btn"><i class="fas fa-phone"></i> +91 89252 00917</a>
+            </div>
+            <p class="location">Nazareth, Thoothukudi, India</p>
+        </div>
+    </footer>
 
-    if (isMobile) {
-        // On mobile, use the standard mailto app
-        window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
-    } else {
-        // On desktop, force open Gmail in a new browser tab
-        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}`;
-        window.open(gmailUrl, '_blank');
-    }
-}
-
-        const glow = document.querySelector('.cursor-glow');
-        document.addEventListener('mousemove', (e) => {
-            glow.style.left = e.pageX + 'px';
-            glow.style.top = e.pageY + 'px';
-        });
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting) entry.target.classList.add('in-view');
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.slide-up').forEach(el => observer.observe(el));
-    </script>
 </body>
 </html>
